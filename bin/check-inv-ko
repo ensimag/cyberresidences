@@ -1,0 +1,11 @@
+# Check an invariant given
+# * the package
+# * the class
+# * the name of the invariant
+#
+# example:
+#     bin/check-inv-ko Buildings Residence floorOrder
+#
+# must KO for this invariant
+
+use -qv Classes/classes.cls States/KO/$1/$2/$3__KO.soil

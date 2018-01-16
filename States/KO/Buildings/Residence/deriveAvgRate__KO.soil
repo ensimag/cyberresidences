@@ -1,0 +1,7 @@
+-- @assert Residence__deriveAvgRate KO
+
+-- context self : Residence inv deriveAvgRate :
+-- Derivation of the avgRate attribute.
+
+-- open -q <BASE>.soil
+-- here some mutation code

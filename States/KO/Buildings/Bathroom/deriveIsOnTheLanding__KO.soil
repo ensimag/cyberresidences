@@ -1,0 +1,7 @@
+-- @assert Bathroom__deriveIsOnTheLanding KO
+
+-- context self : Bathroom inv deriveIsOnTheLanding :
+-- Derivation of isOnTheLanding attribute.
+
+-- open -q <BASE>.soil
+-- here some mutation code

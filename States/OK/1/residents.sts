@@ -1,0 +1,220 @@
+--------------------------------------------------------
+--           Tenants
+--------------------------------------------------------
+
+-- Liberty
+! robertKlint := new Tenant('robertKlint')
+! robertKlint.name := 'Robert Klint'
+! robertKlint.age := 75
+! robertKlint.paidRate := 325
+! robertKlint.gender := #male
+! robertKlint.isSmoker := true
+
+! marieLegrand := new Tenant('marieLegrand')
+! marieLegrand.name := 'Marie Legrand'
+! marieLegrand.age := 30
+! marieLegrand.gender := #female
+! marieLegrand.paidRate := 155
+! marieLegrand.isSmoker := true
+
+
+-- Millenium
+! watoo := new Tenant('watoo')
+! watoo.name := 'watoo'
+! watoo.age := 40
+! watoo.paidRate := 120
+
+--------------------------------------------------------
+--           Residents
+--------------------------------------------------------
+
+-- Liberty
+
+! sylvieNeon := new Resident('sylvieNeon')
+! sylvieNeon.name := 'Sylvie Neon'
+! sylvieNeon.age := 34
+! sylvieNeon.gender := #female
+! sylvieNeon.isSmoker := true
+
+! sandrineHaleau := new Resident('sandrineHaleau')
+! sandrineHaleau.name := 'Sandrine Haleau'
+! sandrineHaleau.age := 25
+! sandrineHaleau.gender := #female
+! sandrineHaleau.isSmoker := true
+
+! jennyFerre := new Resident('jennyFerre')
+! jennyFerre.name := 'Jenny Ferre'
+! jennyFerre.age := 23
+! jennyFerre.gender := #female
+! jennyFerre.isSmoker := true
+
+! elisaNGuyen := new Resident('elisaNGuyen')
+! elisaNGuyen.name := 'Elisa Nguyen'
+! elisaNGuyen.age := 24
+! elisaNGuyen.gender := #female
+! elisaNGuyen.isSmoker := false
+
+! jeffLegrand := new Resident('jeffLegrand')
+! jeffLegrand.name := 'Jeff Legrand'
+! jeffLegrand.age := 80
+! jeffLegrand.gender := #male
+! jeffLegrand.isSmoker := true
+
+! paulLegrand := new Resident('paulLegrand')
+! paulLegrand.name := 'Paul Legrand'
+! paulLegrand.age := 18
+! paulLegrand.gender := #male
+! paulLegrand.isSmoker := true
+
+! alainFerrand := new Resident('alainFerrand')
+! alainFerrand.name := 'Alain Ferrand'
+! alainFerrand.age := 8
+! alainFerrand.gender := #male
+! alainFerrand.isSmoker := false
+
+! francoisLegrand := new Resident('francoisLegrand')
+! francoisLegrand.name := 'Francois Legrand'
+! francoisLegrand.age := 18
+! francoisLegrand.gender := #male
+! francoisLegrand.isSmoker := false
+
+! mauricePetit := new Resident('mauricePetit')
+! mauricePetit.name := 'Maurice Petit'
+! mauricePetit.age := 20
+! mauricePetit.gender := #male
+! mauricePetit.isSmoker := false
+
+
+-- Equality
+
+! johnSmith := new Resident('johnSmith')
+! johnSmith.name := 'johnSmith'
+! johnSmith.age := 30
+! johnSmith.isSmoker := true
+
+! loanShark := new Tenant()
+! loanShark.name := 'loanShark'
+! loanShark.age := 35
+! loanShark.paidRate := 160
+! johnSmith.isSmoker := true
+
+
+-- Millenium
+
+! lukeSky := new Resident('lukeSky')
+! lukeSky.name := 'lukeSky'
+! lukeSky.age := 17
+! lukeSky.gender := #male
+! lukeSky.isSmoker := false
+
+! hanSolo := new Resident('hanSolo')
+! hanSolo.name := 'hanSolo'
+! hanSolo.age := 26
+! hanSolo.gender := #male
+! hanSolo.isSmoker := false
+
+
+
+--------------------------------------------------------
+--           Rents
+--------------------------------------------------------
+
+-- Liberty
+
+! libRent213 := new Rent('rent213') between (libBedroom213, robertKlint)
+! libRent213.rate := 50
+! libRent213.discount := 50
+
+! libRent214 := new Rent('rent214') between (libBedroom214, robertKlint)
+! libRent214.rate := 50
+! libRent214.discount := 0
+
+! libRent216 := new Rent('rent216') between (libBedroom216, robertKlint)
+! libRent216.rate := 50
+! libRent216.discount := 0
+
+! libRent217 := new Rent('rent217') between (libBedroom217, robertKlint)
+! libRent217.rate := 100
+! libRent217.discount := 0
+
+! libRent218 := new Rent('rent218') between (libBedroom218, robertKlint)
+! libRent218.rate := 75
+! libRent218.discount := 25
+
+! libRent306 := new Rent('rent306') between (libBedroom306, marieLegrand)
+! libRent306.rate := 70
+! libRent306.discount := 70
+
+! libRent308 := new Rent('rent308') between (libBedroom308, marieLegrand)
+! libRent308.rate := 75
+! libRent308.discount := 25
+
+! libRent406 := new Rent('rent406') between (libBedroom406, marieLegrand)
+! libRent406.rate := 30
+! libRent406.discount := 0
+
+-- Equality
+
+! equRent100 := new Rent() between (equBedroom100, loanShark)
+! equRent100.rate := 25
+! equRent100.discount := 25
+
+! equRent101 := new Rent() between(equBedroom101, loanShark)
+! equRent101.rate := 135
+! equRent101.discount := 15
+
+-- Milenium
+
+! milRentP1 := new Rent() between (milBedroom502, watoo)
+! milRentP1.rate := 100
+! milRentP1.discount := 0
+
+! milRentP2 := new Rent() between (milBedroom500, watoo)
+! milRentP2.rate := 20
+! milRentP2.discount := 30
+
+
+
+--------------------------------------------------------
+--           IsTutoredBy
+--------------------------------------------------------
+
+
+! insert(alainFerrand,mauricePetit) into IsTutoredBy
+
+--------------------------------------------------------
+--           IsOccupiedBy
+--------------------------------------------------------
+
+-- Liberty
+
+! insert(libBedroom213,robertKlint) into IsOccupiedBy
+! insert(libBedroom214,sylvieNeon) into IsOccupiedBy
+! insert(libBedroom216,sandrineHaleau) into IsOccupiedBy
+! insert(libBedroom217,jennyFerre) into IsOccupiedBy
+! insert(libBedroom218,elisaNGuyen) into IsOccupiedBy
+! insert(libBedroom306,jeffLegrand) into IsOccupiedBy
+! insert(libBedroom306,marieLegrand) into IsOccupiedBy
+! insert(libBedroom306,alainFerrand) into IsOccupiedBy
+! insert(libBedroom308,paulLegrand) into IsOccupiedBy
+! insert(libBedroom308,francoisLegrand) into IsOccupiedBy
+! insert(libBedroom406,mauricePetit) into IsOccupiedBy
+
+-- Equality
+
+! insert (equBedroom100, loanShark) into IsOccupiedBy
+! insert (equBedroom101, johnSmith) into IsOccupiedBy
+
+-- Milenium
+
+
+! insert (milBedroom500, watoo) into IsOccupiedBy
+! insert (milBedroom502, lukeSky) into IsOccupiedBy
+! insert (milBedroom502, hanSolo) into IsOccupiedBy
+
+--------------------------------------------------------
+--           IsMarriedWith
+--------------------------------------------------------
+
+! insert(marieLegrand,jeffLegrand) into IsMarriedWith
+! insert(jeffLegrand,marieLegrand) into IsMarriedWith

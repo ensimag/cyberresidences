@@ -1,0 +1,7 @@
+-- @assert Bathroom__oooIfPrestige KO
+
+-- context self : Bathroom inv oooIfPrestige :
+-- Out of order bathroom implications if prestige. 
+
+-- open -q <BASE>.soil
+-- here some mutation code

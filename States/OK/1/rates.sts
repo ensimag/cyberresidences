@@ -1,0 +1,67 @@
+--------------------------------------------------------
+--           Discounts
+--------------------------------------------------------
+
+-- Liberty
+
+! libDiscount218a := new Discount('libDiscount218a')
+! libDiscount218a.percentage := 20
+! libDiscount218a.label := 'AB'
+
+! libDiscount218b := new Discount('libDiscount218b')
+! libDiscount218b.percentage := 5
+! libDiscount218b.label := 'TR'
+
+! libDiscount306 := new Discount('libDiscount306')
+! libDiscount306.percentage := 50
+! libDiscount306.label := 'CTrav'
+
+! libDiscount308a := new Discount('libDiscount308a')
+! libDiscount308a.percentage := 20
+! libDiscount308a.label := 'AB'
+
+! libDiscount308b := new Discount('libDiscount308b')
+! libDiscount308b.percentage := 5
+! libDiscount308b.label := 'TR'
+
+! libDiscount213 := new Discount('libDiscount213')
+! libDiscount213.percentage := 50
+! libDiscount213.label := 'CTrav'
+
+-- Equality
+
+! equDiscount100 := new Discount()
+! equDiscount100.label := 'discountTenant'
+! equDiscount100.percentage := 50
+
+! equDiscount101 := new Discount()
+! equDiscount101.label := 'SBOOO'
+! equDiscount101.percentage := 10
+
+-- Millenium
+
+! milDiscountP := new Discount()
+! milDiscountP.label := 'reducTenant'
+! milDiscountP.percentage := 60
+
+--------------------------------------------------------
+--           HasDiscounts
+--------------------------------------------------------
+
+-- Liberty
+
+! insert(libRent213,libDiscount213) into HasDiscounts
+! insert(libRent218,libDiscount218a) into HasDiscounts
+! insert(libRent218,libDiscount218b) into HasDiscounts
+! insert(libRent306,libDiscount306) into HasDiscounts
+! insert(libRent308,libDiscount308a) into HasDiscounts
+! insert(libRent308,libDiscount308b) into HasDiscounts
+
+--  Equality
+
+! insert (equRent100, equDiscount100) into HasDiscounts
+! insert (equRent101, equDiscount101) into HasDiscounts
+
+-- Millenium
+
+! insert (milRentP2, milDiscountP) into HasDiscounts

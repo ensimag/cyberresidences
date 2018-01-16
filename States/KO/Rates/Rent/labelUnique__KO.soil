@@ -1,0 +1,7 @@
+-- @assert Rent__labelUnique KO
+
+-- context self : Rent inv labelUnique :
+-- Uniqueness of labels with respect to rents.
+
+-- open -q <BASE>.soil
+-- here some mutation code

@@ -1,0 +1,9 @@
+-- @assert Residence__floorOrder KO
+
+-- context self : Residence inv floorOrder :
+-- Order between floorMin and floorMax attributes.
+
+! condillac := new Residence('condillac')
+! condillac.name := 'Residence Condillac'
+! condillac.floorMin := 5
+! condillac.floorMax := 1

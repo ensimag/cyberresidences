@@ -1,0 +1,9 @@
+# Add below the invariants that have been implemented
+# For each invariant this script must display a line OK and one KO
+
+echo "-----------------------------------------------------"
+echo "All the invariant below have been implemented        "
+echo "This script must display OK. FAILED. OK. FAILED.  ..."
+echo "-----------------------------------------------------"
+
+bin/check-inv Buildings Residence floorOrder

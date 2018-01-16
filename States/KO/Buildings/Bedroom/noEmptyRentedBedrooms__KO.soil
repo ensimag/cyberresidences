@@ -1,0 +1,7 @@
+-- @assert Bedroom__noEmptyRentedBedrooms KO
+
+-- context self : Bedroom inv noEmptyRentedBedrooms :
+-- Rented bedrooms not empty.
+
+-- open -q <BASE>.soil
+-- here some mutation code

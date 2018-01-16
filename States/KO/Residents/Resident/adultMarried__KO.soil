@@ -1,0 +1,7 @@
+-- @assert Resident__adultMarried KO
+
+-- context self : Resident inv adultMarried :
+-- Only adult married.
+
+-- open -q <BASE>.soil
+-- here some mutation code

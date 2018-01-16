@@ -1,0 +1,14 @@
+# Check an invariant given
+# * the package
+# * the class
+# * the name of the invariant
+#
+# example:
+#     bin/check-inv Buildings Residence floorOrder
+#
+# must display one line with OK, then one line with KO
+# in case of errors, for more details use check-all-ok and check-inv-ko
+
+./bin/check-all-ok | grep $2::$3
+./bin/check-inv-ko $1 $2 $3 | grep $2::$3
+

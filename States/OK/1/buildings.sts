@@ -1,0 +1,6 @@
+-- Creates all the building parts for 4 residences
+
+open -q buildings-fraternity.sts
+open -q buildings-equality.sts
+open -q buildings-liberty.sts
+open -q buildings-millenium.sts

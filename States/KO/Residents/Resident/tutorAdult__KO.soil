@@ -1,0 +1,7 @@
+-- @assert Resident__tutorAdult KO
+
+-- context self : Resident inv tutorAdult :
+-- Tutors are adults.
+
+-- open -q <BASE>.soil
+-- here some mutation code

@@ -1,0 +1,7 @@
+-- @assert Rent__deriveDiscount KO
+
+-- context self : Rent inv deriveDiscount :
+-- Derivation of the attribute discount.
+
+-- open -q <BASE>.soil
+-- here some mutation code

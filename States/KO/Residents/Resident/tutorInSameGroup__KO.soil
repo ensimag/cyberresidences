@@ -1,0 +1,7 @@
+-- @assert Resident__tutorInSameGroup KO
+
+-- context self : Resident inv tutorInSameGroup :
+-- Tutors and tutored in one group.
+
+-- open -q <BASE>.soil
+-- here some mutation code

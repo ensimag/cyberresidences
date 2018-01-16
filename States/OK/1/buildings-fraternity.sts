@@ -1,0 +1,6 @@
+! resFraternity := new Residence('fraternity')
+! resFraternity.floorMin := 1
+! resFraternity.floorMax := 1
+! resFraternity.category := #premium
+! resFraternity.maxNbOfFreeUnits := 0
+! resFraternity.name := 'Fraternity'

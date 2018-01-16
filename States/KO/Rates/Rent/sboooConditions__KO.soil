@@ -1,0 +1,7 @@
+-- @assert Rent__sboooConditions KO
+
+-- context self : Rent inv sboooConditions :
+-- Conditions for granting a discount "Some Bathrooms Out Of Order" (SBOOO).
+
+-- open -q <BASE>.soil
+-- here some mutation code

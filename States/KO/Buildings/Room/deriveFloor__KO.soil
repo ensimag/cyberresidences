@@ -1,0 +1,7 @@
+-- @assert Room__deriveFloor KO
+
+-- context self : Room inv deriveFloor :
+-- Derivation of the attribute floor.
+
+-- open -q <BASE>.soil
+-- here some mutation code

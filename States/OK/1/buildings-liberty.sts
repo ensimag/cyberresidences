@@ -1,0 +1,502 @@
+--------------------------------------------------------
+--           Residences
+--------------------------------------------------------
+
+! resLiberty := new Residence('liberty')
+! resLiberty.floorMin := 2
+! resLiberty.floorMax := 5
+! resLiberty.category := #economy
+! resLiberty.maxNbOfFreeUnits := 69
+! resLiberty.name := 'Liberty'
+! resLiberty.avgRate := 50
+
+--------------------------------------------------------
+--           Rooms
+--------------------------------------------------------
+
+! libRoom200 := new Room('rLib200')
+! libRoom200.number := 200
+! libRoom200.floor := 2
+! libRoom200.isOutOfOrder := true
+
+! libRoom204 := new Room('rLib204')
+! libRoom204.number := 204
+! libRoom204.floor := 2
+! libRoom204.isOutOfOrder := false
+
+! libRoom205 := new Room('rLib205')
+! libRoom205.number := 205
+! libRoom205.floor := 2
+! libRoom205.isOutOfOrder := true
+
+! libRoom206 := new Room('rLib206')
+! libRoom206.number := 206
+! libRoom206.floor := 2
+! libRoom206.isOutOfOrder := false
+
+! libRoom209 := new Room('rLib209')
+! libRoom209.number := 209
+! libRoom209.floor := 2
+! libRoom209.isOutOfOrder := false
+
+! libRoom305 := new Room('rLib305')
+! libRoom305.number := 305
+! libRoom305.floor := 3
+! libRoom305.isOutOfOrder := false
+
+! libRoom407 := new Room('rLib407')
+! libRoom407.number := 407
+! libRoom407.floor := 4
+! libRoom407.isOutOfOrder := false
+
+--------------------------------------------------------
+--           Bedrooms
+--------------------------------------------------------
+
+! libBedroom201 := new Bedroom('bedLib201')
+! libBedroom201.number := 201
+! libBedroom201.floor := 2
+! libBedroom201.isOutOfOrder := false
+! libBedroom201.nbOfSingleBeds := 1
+! libBedroom201.nbOfDoubleBeds := 1
+! libBedroom201.rate := 50
+! libBedroom201.isNonSmoking := true
+! libBedroom201.nbOfUnits := 3
+
+! libBedroom202 := new Bedroom('bedLib202')
+! libBedroom202.number := 202
+! libBedroom202.floor := 2
+! libBedroom202.isOutOfOrder := false
+! libBedroom202.nbOfSingleBeds := 2
+! libBedroom202.nbOfDoubleBeds := 2
+! libBedroom202.rate := 70
+! libBedroom202.isNonSmoking := true
+! libBedroom202.nbOfUnits := 6
+
+! libBedroom207 := new Bedroom('bedLib207')
+! libBedroom207.number := 207
+! libBedroom207.floor := 2
+! libBedroom207.isOutOfOrder := false
+! libBedroom207.nbOfSingleBeds := 0
+! libBedroom207.nbOfDoubleBeds := 1
+! libBedroom207.rate := 40
+! libBedroom207.isNonSmoking := false
+! libBedroom207.nbOfUnits := 2
+
+! libBedroom208 := new Bedroom('bedLib208')
+! libBedroom208.number := 208
+! libBedroom208.floor := 2
+! libBedroom208.isOutOfOrder := false
+! libBedroom208.nbOfSingleBeds := 1
+! libBedroom208.nbOfDoubleBeds := 0
+! libBedroom208.rate := 30
+! libBedroom208.isNonSmoking := true
+! libBedroom208.nbOfUnits := 1
+
+! libBedroom210 := new Bedroom('bedLib210')
+! libBedroom210.number := 210
+! libBedroom210.floor := 2
+! libBedroom210.isOutOfOrder := false
+! libBedroom210.nbOfSingleBeds := 1
+! libBedroom210.nbOfDoubleBeds := 0
+! libBedroom210.rate := 40
+! libBedroom210.isNonSmoking := false
+! libBedroom210.nbOfUnits := 1
+
+! libBedroom211 := new Bedroom('bedLib211')
+! libBedroom211.number := 211
+! libBedroom211.floor := 2
+! libBedroom211.isOutOfOrder := true
+! libBedroom211.nbOfSingleBeds := 0
+! libBedroom211.nbOfDoubleBeds := 0
+! libBedroom211.rate := 0
+! libBedroom211.isNonSmoking := true
+! libBedroom211.nbOfUnits := 0
+
+! libBedroom212 := new Bedroom('bedLib212')
+! libBedroom212.number := 212
+! libBedroom212.floor := 2
+! libBedroom212.isOutOfOrder := false
+! libBedroom212.nbOfSingleBeds := 0
+! libBedroom212.nbOfDoubleBeds := 3
+! libBedroom212.rate := 80
+! libBedroom212.isNonSmoking := true
+! libBedroom212.nbOfUnits := 6
+
+! libBedroom213 := new Bedroom('bedLib213')
+! libBedroom213.number := 213
+! libBedroom213.floor := 2
+! libBedroom213.isOutOfOrder := false
+! libBedroom213.nbOfSingleBeds := 0
+! libBedroom213.nbOfDoubleBeds := 2
+! libBedroom213.rate := 100
+! libBedroom213.isNonSmoking := true
+! libBedroom213.nbOfUnits := 4
+
+! libBedroom214 := new Bedroom('bedLib214')
+! libBedroom214.number := 214
+! libBedroom214.floor := 2
+! libBedroom214.isOutOfOrder := false
+! libBedroom214.nbOfSingleBeds := 0
+! libBedroom214.nbOfDoubleBeds := 3
+! libBedroom214.rate := 50
+! libBedroom214.isNonSmoking := true
+! libBedroom214.nbOfUnits := 6
+
+! libBedroom216 := new Bedroom('bedLib216')
+! libBedroom216.number := 216
+! libBedroom216.floor := 2
+! libBedroom216.isOutOfOrder := false
+! libBedroom216.nbOfSingleBeds := 0
+! libBedroom216.nbOfDoubleBeds := 2
+! libBedroom216.rate := 50
+! libBedroom216.isNonSmoking := true
+! libBedroom216.nbOfUnits := 4
+
+! libBedroom217 := new Bedroom('bedLib217')
+! libBedroom217.number := 217
+! libBedroom217.floor := 2
+! libBedroom217.isOutOfOrder := false
+! libBedroom217.nbOfSingleBeds := 1
+! libBedroom217.nbOfDoubleBeds := 2
+! libBedroom217.rate := 100
+! libBedroom217.isNonSmoking := true
+! libBedroom217.nbOfUnits := 5
+
+! libBedroom218 := new Bedroom('bedLib218')
+! libBedroom218.number := 218
+! libBedroom218.floor := 2
+! libBedroom218.isOutOfOrder := false
+! libBedroom218.nbOfSingleBeds := 0
+! libBedroom218.nbOfDoubleBeds := 1
+! libBedroom218.rate := 100
+! libBedroom218.isNonSmoking := true
+! libBedroom218.nbOfUnits := 2
+
+! libBedroom300 := new Bedroom('bedLib300')
+! libBedroom300.number := 300
+! libBedroom300.floor := 3
+! libBedroom300.isOutOfOrder := false
+! libBedroom300.nbOfSingleBeds := 1
+! libBedroom300.nbOfDoubleBeds := 1
+! libBedroom300.rate := 40
+! libBedroom300.isNonSmoking := true
+! libBedroom300.nbOfUnits := 3
+
+! libBedroom301 := new Bedroom('bedLib301')
+! libBedroom301.number := 301
+! libBedroom301.floor := 3
+! libBedroom301.isOutOfOrder := false
+! libBedroom301.nbOfSingleBeds := 0
+! libBedroom301.nbOfDoubleBeds := 2
+! libBedroom301.rate := 50
+! libBedroom301.isNonSmoking := true
+! libBedroom301.nbOfUnits := 4
+
+! libBedroom302 := new Bedroom('bedLib302')
+! libBedroom302.number := 302
+! libBedroom302.floor := 3
+! libBedroom302.isOutOfOrder := false
+! libBedroom302.nbOfSingleBeds := 0
+! libBedroom302.nbOfDoubleBeds := 1
+! libBedroom302.rate := 30
+! libBedroom302.isNonSmoking := true
+! libBedroom302.nbOfUnits := 2
+
+! libBedroom303 := new Bedroom('bedLib303')
+! libBedroom303.number := 303
+! libBedroom303.floor := 3
+! libBedroom303.isOutOfOrder := false
+! libBedroom303.nbOfSingleBeds := 1
+! libBedroom303.nbOfDoubleBeds := 0
+! libBedroom303.rate := 25
+! libBedroom303.isNonSmoking := true
+! libBedroom303.nbOfUnits := 1
+
+! libBedroom304 := new Bedroom('bedLib304')
+! libBedroom304.number := 304
+! libBedroom304.floor := 3
+! libBedroom304.isOutOfOrder := false
+! libBedroom304.nbOfSingleBeds := 1
+! libBedroom304.nbOfDoubleBeds := 0
+! libBedroom304.rate := 30
+! libBedroom304.isNonSmoking := true
+! libBedroom304.nbOfUnits := 1
+
+! libBedroom306 := new Bedroom('bedLib306')
+! libBedroom306.number := 306
+! libBedroom306.floor := 3
+! libBedroom306.isOutOfOrder := false
+! libBedroom306.nbOfSingleBeds := 2
+! libBedroom306.nbOfDoubleBeds := 2
+! libBedroom306.rate := 140
+! libBedroom306.isNonSmoking := true
+! libBedroom306.nbOfUnits := 6
+
+! libBedroom307 := new Bedroom('bedLib307')
+! libBedroom307.number := 307
+! libBedroom307.floor := 3
+! libBedroom307.isOutOfOrder := true
+! libBedroom307.nbOfSingleBeds := 1
+! libBedroom307.nbOfDoubleBeds := 1
+! libBedroom307.rate := 100
+! libBedroom307.isNonSmoking := false
+! libBedroom307.nbOfUnits := 3
+
+! libBedroom308 := new Bedroom('bedLib308')
+! libBedroom308.number := 308
+! libBedroom308.floor := 3
+! libBedroom308.isOutOfOrder := false
+! libBedroom308.nbOfSingleBeds := 2
+! libBedroom308.nbOfDoubleBeds := 0
+! libBedroom308.rate := 100
+! libBedroom308.nbOfUnits := 2
+
+! libBedroom401 := new Bedroom('bedLib401')
+! libBedroom401.number := 401
+! libBedroom401.floor := 4
+! libBedroom401.isOutOfOrder := false
+! libBedroom401.nbOfSingleBeds := 2
+! libBedroom401.nbOfDoubleBeds := 0
+! libBedroom401.rate := 40
+! libBedroom401.nbOfUnits := 2
+
+! libBedroom403 := new Bedroom('bedLib403')
+! libBedroom403.number := 403
+! libBedroom403.floor := 4
+! libBedroom403.isOutOfOrder := false
+! libBedroom403.nbOfSingleBeds := 0
+! libBedroom403.nbOfDoubleBeds := 1
+! libBedroom403.rate := 50
+! libBedroom403.nbOfUnits := 2
+
+! libBedroom404 := new Bedroom('bedLib404')
+! libBedroom404.number := 404
+! libBedroom404.floor := 4
+! libBedroom404.isOutOfOrder := false
+! libBedroom404.nbOfSingleBeds := 0
+! libBedroom404.nbOfDoubleBeds := 1
+! libBedroom404.rate := 40
+! libBedroom404.nbOfUnits := 2
+
+! libBedroom406 := new Bedroom('bedLib406')
+! libBedroom406.number := 406
+! libBedroom406.floor := 4
+! libBedroom406.isOutOfOrder := false
+! libBedroom406.nbOfSingleBeds := 1
+! libBedroom406.nbOfDoubleBeds := 0
+! libBedroom406.rate := 30
+! libBedroom406.nbOfUnits := 1
+
+
+
+--------------------------------------------------------
+--           Bathrooms
+--------------------------------------------------------
+
+! libBathroom201 := new Bathroom('bathLib201')
+! libBathroom201.number := 201
+! libBathroom201.floor := 2
+! libBathroom201.isOutOfOrder := true
+! libBathroom201.isOnTheLanding := false
+
+! libBathroom202a := new Bathroom('bathLib202a')
+! libBathroom202a.number := 202
+! libBathroom202a.floor := 2
+! libBathroom202a.isOutOfOrder := false
+! libBathroom202a.isOnTheLanding := false
+
+! libBathroom202b := new Bathroom('bathLib202b')
+! libBathroom202b.number := 202
+! libBathroom202b.floor := 2
+! libBathroom202b.isOutOfOrder := true
+! libBathroom202b.isOnTheLanding := false
+
+! libBathroom203 := new Bathroom('bathLib203')
+! libBathroom203.number := 203
+! libBathroom203.floor := 2
+! libBathroom203.isOutOfOrder := false
+! libBathroom203.isOnTheLanding := true
+
+! libBathroom210 := new Bathroom('bathLib210')
+! libBathroom210.number := 210
+! libBathroom210.floor := 2
+! libBathroom210.isOutOfOrder := true
+! libBathroom210.isOnTheLanding := false
+
+! libBathroom212a := new Bathroom('bathLib212a')
+! libBathroom212a.number := 212
+! libBathroom212a.floor := 2
+! libBathroom212a.isOutOfOrder := false
+! libBathroom212a.isOnTheLanding := false
+
+! libBathroom212b := new Bathroom('bathLib212b')
+! libBathroom212b.number := 212
+! libBathroom212b.floor := 2
+! libBathroom212b.isOutOfOrder := false
+! libBathroom212b.isOnTheLanding := false
+
+! libBathroom213 := new Bathroom('bathLib213')
+! libBathroom213.number := 213
+! libBathroom213.floor := 2
+! libBathroom213.isOutOfOrder := false
+! libBathroom213.isOnTheLanding := false
+
+! libBathroom214 := new Bathroom('bathLib214')
+! libBathroom214.number := 214
+! libBathroom214.floor := 2
+! libBathroom214.isOutOfOrder := false
+! libBathroom214.isOnTheLanding := false
+
+! libBathroom215 := new Bathroom('bathLib215')
+! libBathroom215.number := 215
+! libBathroom215.floor := 2
+! libBathroom215.isOutOfOrder := false
+! libBathroom215.isOnTheLanding := true
+
+! libBathroom217 := new Bathroom('bathLib217')
+! libBathroom217.number := 217
+! libBathroom217.floor := 2
+! libBathroom217.isOutOfOrder := false
+! libBathroom217.isOnTheLanding := false
+
+! libBathroom300 := new Bathroom('bathLib300')
+! libBathroom300.number := 300
+! libBathroom300.floor := 3
+! libBathroom300.isOutOfOrder := true
+! libBathroom300.isOnTheLanding := false
+
+! libBathroom301a := new Bathroom('bathLib301a')
+! libBathroom301a.number := 301
+! libBathroom301a.floor := 3
+! libBathroom301a.isOutOfOrder := false
+! libBathroom301a.isOnTheLanding := false
+
+! libBathroom301b := new Bathroom('bathLib301b')
+! libBathroom301b.number := 301
+! libBathroom301b.floor := 3
+! libBathroom301b.isOutOfOrder := true
+! libBathroom301b.isOnTheLanding := false
+
+! libBathroom304 := new Bathroom('bathLib304')
+! libBathroom304.number := 304
+! libBathroom304.floor := 3
+! libBathroom304.isOutOfOrder := false
+! libBathroom304.isOnTheLanding := false
+
+! libBathroom306a := new Bathroom('bathLib306a')
+! libBathroom306a.number := 306
+! libBathroom306a.floor := 3
+! libBathroom306a.isOutOfOrder := true
+! libBathroom306a.isOnTheLanding := false
+
+! libBathroom306b := new Bathroom('bathLib306b')
+! libBathroom306b.number := 306
+! libBathroom306b.floor := 3
+! libBathroom306b.isOutOfOrder := true
+! libBathroom306b.isOnTheLanding := false
+
+! libBathroom401 := new Bathroom('bathLib401')
+! libBathroom401.number := 401
+! libBathroom401.floor := 4
+! libBathroom401.isOutOfOrder := true
+! libBathroom401.isOnTheLanding := false
+
+! libBathroom403 := new Bathroom('bathLib403')
+! libBathroom403.number := 403
+! libBathroom403.floor := 4
+! libBathroom403.isOutOfOrder := false
+! libBathroom403.isOnTheLanding := false
+
+! libBathroom402 := new Bathroom('bathLib402')
+! libBathroom402.number := 402
+! libBathroom402.floor := 4
+! libBathroom402.isOutOfOrder := true
+! libBathroom402.isOnTheLanding := true
+
+! libBathroom405 := new Bathroom('bathLib405')
+! libBathroom405.number := 405
+! libBathroom405.floor := 4
+! libBathroom405.isOutOfOrder := true
+! libBathroom405.isOnTheLanding := true
+
+
+--------------------------------------------------------
+--           ContainsRooms
+--------------------------------------------------------
+
+! insert(resLiberty, libRoom200) into ContainsRooms
+! insert(resLiberty, libRoom204) into ContainsRooms
+! insert(resLiberty, libRoom205) into ContainsRooms
+! insert(resLiberty, libRoom206) into ContainsRooms
+! insert(resLiberty, libRoom209) into ContainsRooms
+! insert(resLiberty, libRoom305) into ContainsRooms
+! insert(resLiberty, libRoom407) into ContainsRooms
+! insert(resLiberty, libBathroom201) into ContainsRooms
+! insert(resLiberty, libBathroom202a) into ContainsRooms
+! insert(resLiberty, libBathroom202b) into ContainsRooms
+! insert(resLiberty, libBathroom203) into ContainsRooms
+! insert(resLiberty, libBathroom210) into ContainsRooms
+! insert(resLiberty, libBathroom212a) into ContainsRooms
+! insert(resLiberty, libBathroom212b) into ContainsRooms
+! insert(resLiberty, libBathroom213) into ContainsRooms
+! insert(resLiberty, libBathroom214) into ContainsRooms
+! insert(resLiberty, libBathroom215) into ContainsRooms
+! insert(resLiberty, libBathroom217) into ContainsRooms
+! insert(resLiberty, libBathroom300) into ContainsRooms
+! insert(resLiberty, libBathroom301a) into ContainsRooms
+! insert(resLiberty, libBathroom301b) into ContainsRooms
+! insert(resLiberty, libBathroom304) into ContainsRooms
+! insert(resLiberty, libBathroom306a) into ContainsRooms
+! insert(resLiberty, libBathroom306b) into ContainsRooms
+! insert(resLiberty, libBathroom401) into ContainsRooms
+! insert(resLiberty, libBathroom403) into ContainsRooms
+! insert(resLiberty, libBathroom402) into ContainsRooms
+! insert(resLiberty, libBathroom405) into ContainsRooms
+! insert(resLiberty, libBedroom201) into ContainsRooms
+! insert(resLiberty, libBedroom202) into ContainsRooms
+! insert(resLiberty, libBedroom207) into ContainsRooms
+! insert(resLiberty, libBedroom208) into ContainsRooms
+! insert(resLiberty, libBedroom210) into ContainsRooms
+! insert(resLiberty, libBedroom211) into ContainsRooms
+! insert(resLiberty, libBedroom212) into ContainsRooms
+! insert(resLiberty, libBedroom213) into ContainsRooms
+! insert(resLiberty, libBedroom214) into ContainsRooms
+! insert(resLiberty, libBedroom216) into ContainsRooms
+! insert(resLiberty, libBedroom217) into ContainsRooms
+! insert(resLiberty, libBedroom218) into ContainsRooms
+! insert(resLiberty, libBedroom300) into ContainsRooms
+! insert(resLiberty, libBedroom301) into ContainsRooms
+! insert(resLiberty, libBedroom302) into ContainsRooms
+! insert(resLiberty, libBedroom303) into ContainsRooms
+! insert(resLiberty, libBedroom304) into ContainsRooms
+! insert(resLiberty, libBedroom306) into ContainsRooms
+! insert(resLiberty, libBedroom307) into ContainsRooms
+! insert(resLiberty, libBedroom308) into ContainsRooms
+! insert(resLiberty, libBedroom401) into ContainsRooms
+! insert(resLiberty, libBedroom403) into ContainsRooms
+! insert(resLiberty, libBedroom404) into ContainsRooms
+! insert(resLiberty, libBedroom406) into ContainsRooms
+
+
+--------------------------------------------------------
+--           IsInBedroom
+--------------------------------------------------------
+
+! insert(libBathroom201, libBedroom201) into IsInBedroom
+! insert(libBathroom202a, libBedroom202) into IsInBedroom
+! insert(libBathroom202b, libBedroom202) into IsInBedroom
+! insert(libBathroom210, libBedroom210) into IsInBedroom
+! insert(libBathroom212a, libBedroom212) into IsInBedroom
+! insert(libBathroom212b, libBedroom212) into IsInBedroom
+! insert(libBathroom213, libBedroom213) into IsInBedroom
+! insert(libBathroom214, libBedroom214) into IsInBedroom
+! insert(libBathroom217, libBedroom217) into IsInBedroom
+! insert(libBathroom300, libBedroom300) into IsInBedroom
+! insert(libBathroom301a, libBedroom301) into IsInBedroom
+! insert(libBathroom301b, libBedroom301) into IsInBedroom
+! insert(libBathroom304, libBedroom304) into IsInBedroom
+! insert(libBathroom306a, libBedroom306) into IsInBedroom
+! insert(libBathroom306b, libBedroom306) into IsInBedroom
+! insert(libBathroom401, libBedroom401) into IsInBedroom
+! insert(libBathroom403, libBedroom403) into IsInBedroom

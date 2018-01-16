@@ -1,0 +1,7 @@
+-- @assert Room__floorBetweenMinAndMax KO
+
+-- context self : Room inv floorBetweenMinAndMax :
+-- Floor between minimum and maximum floors.
+
+open -q ../../../OK/2/state.sts
+! residence1.floorMax := 2

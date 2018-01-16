@@ -1,0 +1,7 @@
+-- @assert Bedroom__atLeastABed KO
+
+-- context self : Bedroom inv atLeastABed :
+-- At least one bed for useful bedrooms.
+
+-- open -q <BASE>.soil
+-- here some mutation code

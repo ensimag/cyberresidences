@@ -1,0 +1,7 @@
+-- @assert Tenant__adultTenant KO
+
+-- context self : Tenant inv adultTenant :
+-- Tenants are adults.
+
+-- open -q <BASE>.soil
+-- here some mutation code

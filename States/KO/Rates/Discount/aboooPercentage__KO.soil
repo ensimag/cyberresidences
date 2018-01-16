@@ -1,0 +1,7 @@
+-- @assert Discount__aboooPercentage KO
+
+-- context self : Discount inv aboooPercentage :
+-- Percentage of "ABOOO" discount according to residence category.
+
+-- open -q <BASE>.soil
+-- here some mutation code

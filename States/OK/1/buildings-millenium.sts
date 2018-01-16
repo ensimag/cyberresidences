@@ -1,0 +1,122 @@
+-- Contributed by lbarallon 2017
+
+--------------------------------------------------------
+--           Residences
+--------------------------------------------------------
+
+! resMillenium := new Residence()
+! resMillenium.floorMin := 3
+! resMillenium.floorMax := 10
+! resMillenium.category := #prestige
+! resMillenium.maxNbOfFreeUnits := 6
+! resMillenium.name := 'Millenium'
+! resMillenium.avgRate := 40
+
+
+--------------------------------------------------------
+--           Bedrooms
+--------------------------------------------------------
+
+! milBedroom500 := new Bedroom('bedMil500')
+! milBedroom500.number := 500
+! milBedroom500.floor := 5
+! milBedroom500.isOutOfOrder := false
+! milBedroom500.nbOfSingleBeds := 1
+! milBedroom500.nbOfDoubleBeds := 0
+! milBedroom500.isNonSmoking := true
+! milBedroom500.rate := 50
+! milBedroom500.nbOfUnits := 1
+
+
+! milBedroom501 := new Bedroom('bedMil501')
+! milBedroom501.number := 501
+! milBedroom501.floor := 5
+! milBedroom501.isOutOfOrder := true
+! milBedroom501.nbOfSingleBeds := 2
+! milBedroom501.nbOfDoubleBeds := 0
+! milBedroom501.isNonSmoking := true
+! milBedroom501.rate := 75
+! milBedroom501.nbOfUnits := 2
+
+
+
+! milBedroom502 := new Bedroom('bedMil502')
+! milBedroom502.number := 502
+! milBedroom502.floor := 5
+! milBedroom502.isOutOfOrder := false
+! milBedroom502.nbOfSingleBeds := 1
+! milBedroom502.nbOfDoubleBeds := 1
+! milBedroom502.isNonSmoking := true
+! milBedroom502.rate := 100
+! milBedroom502.nbOfUnits := 3
+
+
+--------------------------------------------------------
+--           Bathrooms
+--------------------------------------------------------
+
+! milBathroom500 := new Bathroom('bathMil500')
+! milBathroom500.number := 500
+! milBathroom500.floor := 5
+! milBathroom500.isOutOfOrder := false
+! milBathroom500.isOnTheLanding := false
+
+! milBathroom501a := new Bathroom('bathMil501a')
+! milBathroom501a.number := 501
+! milBathroom501a.floor := 5
+! milBathroom501a.isOutOfOrder := true
+! milBathroom501a.isOnTheLanding := false
+
+! milBathroom501b := new Bathroom('bathMil501b')
+! milBathroom501b.number := 501
+! milBathroom501b.floor := 5
+! milBathroom501b.isOutOfOrder := false
+! milBathroom501b.isOnTheLanding := false
+
+! milBathroom502a := new Bathroom('bathMil502a')
+! milBathroom502a.number := 502
+! milBathroom502a.floor := 5
+! milBathroom502a.isOutOfOrder := false
+! milBathroom502a.isOnTheLanding := false
+
+! milBathroom502b := new Bathroom('bathMil502b')
+! milBathroom502b.number := 502
+! milBathroom502b.floor := 5
+! milBathroom502b.isOutOfOrder := false
+! milBathroom502b.isOnTheLanding := false
+
+
+--------------------------------------------------------
+--           ContainsRooms
+--------------------------------------------------------
+
+! insert (resMillenium, milBedroom500) into ContainsRooms
+! insert (resMillenium, milBathroom500) into ContainsRooms
+! insert (resMillenium, milBedroom501) into ContainsRooms
+! insert (resMillenium, milBathroom501a) into ContainsRooms
+! insert (resMillenium, milBathroom501b) into ContainsRooms
+! insert (resMillenium, milBedroom502) into ContainsRooms
+! insert (resMillenium, milBathroom502a) into ContainsRooms
+! insert (resMillenium, milBathroom502b) into ContainsRooms
+
+--------------------------------------------------------
+--           IsInBedroom
+--------------------------------------------------------
+
+! insert (milBathroom500, milBedroom500) into IsInBedroom
+! insert (milBathroom501a, milBedroom501) into IsInBedroom
+! insert (milBathroom501b, milBedroom501) into IsInBedroom
+! insert (milBathroom502a, milBedroom502) into IsInBedroom
+! insert (milBathroom502b, milBedroom502) into IsInBedroom
+
+
+
+
+
+
+
+
+
+
+
+

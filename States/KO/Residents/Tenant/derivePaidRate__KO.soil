@@ -1,0 +1,7 @@
+-- @assert Tenant__derivePaidRate KO
+
+-- context self : Tenant inv derivePaidRate :
+-- Derivation of the attribute paidRate.
+
+-- open -q <BASE>.soil
+-- here some mutation code

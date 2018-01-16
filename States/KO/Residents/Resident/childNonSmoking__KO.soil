@@ -1,0 +1,7 @@
+-- @assert Resident__childNonSmoking KO
+
+-- context self : Resident inv childNonSmoking :
+-- Non smoking child.
+
+-- open -q <BASE>.soil
+-- here some mutation code

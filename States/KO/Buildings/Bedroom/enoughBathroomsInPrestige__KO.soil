@@ -1,0 +1,7 @@
+-- @assert Bedroom__enoughBathroomsInPrestige KO
+
+-- context self : Bedroom inv enoughBathroomsInPrestige :
+-- At least as many bathrooms than beds for prestige residence.
+
+-- open -q <BASE>.soil
+-- here some mutation code

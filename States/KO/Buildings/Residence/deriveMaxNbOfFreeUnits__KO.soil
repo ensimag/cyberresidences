@@ -1,0 +1,7 @@
+-- @assert Residence__deriveMaxNbOfFreeUnits KO
+
+-- context self : Residence inv deriveMaxNbOfFreeUnits :
+-- Derivation of maxNbOfFreeUnits attribute.
+
+-- open -q <BASE>.soil
+-- here some mutation code

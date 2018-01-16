@@ -1,0 +1,7 @@
+-- @assert Tenant__rentInOneResidence KO
+
+-- context self : Tenant inv rentInOneResidence :
+-- Medium. Should be rather short.
+
+-- open -q <BASE>.soil
+-- here some mutation code

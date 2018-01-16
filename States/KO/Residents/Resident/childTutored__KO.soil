@@ -1,0 +1,7 @@
+-- @assert Resident__childTutored KO
+
+-- context self : Resident inv childTutored :
+-- Child tutored.
+
+-- open -q <BASE>.soil
+-- here some mutation code

@@ -1,0 +1,7 @@
+-- @assert Bathroom__sameNumberIfPrivate KO
+
+-- context self : Bathroom inv sameNumberIfPrivate :
+-- Same number if private.
+
+-- open -q <BASE>.soil
+-- here some mutation code

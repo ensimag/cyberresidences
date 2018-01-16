@@ -1,0 +1,7 @@
+-- @assert Bedroom__smokingPremiumPolicy KO
+
+-- context self : Bedroom inv smokingPremiumPolicy :
+-- Smoking policy for premium residences.
+
+-- open -q <BASE>.soil
+-- here some mutation code

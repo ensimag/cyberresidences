@@ -1,0 +1,7 @@
+-- @assert Residence__allPrestigeBathrooms KO
+
+-- context self : Residence inv allPrestigeBathrooms :
+-- Invariant about all bathrooms for 'prestige' residence.
+
+-- open -q <BASE>.soil
+-- here some mutation code

@@ -1,0 +1,7 @@
+-- @assert Resident__noTutorForAdults KO
+
+-- context self : Resident inv noTutorForAdults :
+-- No tutor for adults.
+
+-- open -q <BASE>.soil
+-- here some mutation code

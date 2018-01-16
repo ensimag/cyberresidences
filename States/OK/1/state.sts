@@ -1,0 +1,4 @@
+open -q buildings.sts
+open -q residents.sts
+open -q rates.sts
+--open -q changes.sts

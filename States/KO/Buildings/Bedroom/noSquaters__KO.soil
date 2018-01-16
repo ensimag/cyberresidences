@@ -1,0 +1,7 @@
+-- @assert Bedroom__noSquaters KO
+
+-- context self : Bedroom inv noSquaters :
+-- Nobody in rooms not rented.
+
+-- open -q <BASE>.soil
+-- here some mutation code

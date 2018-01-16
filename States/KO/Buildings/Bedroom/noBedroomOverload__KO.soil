@@ -1,0 +1,7 @@
+-- @assert Bedroom__noBedroomOverload KO
+
+-- context self : Bedroom inv noBedroomOverload :
+-- No bedroom overloaded.
+
+-- open -q <BASE>.soil
+-- here some mutation code

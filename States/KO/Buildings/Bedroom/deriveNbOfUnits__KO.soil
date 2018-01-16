@@ -1,0 +1,7 @@
+-- @assert Bedroom__deriveNbOfUnits KO
+
+-- context self : Bedroom inv deriveNbOfUnits :
+-- Derivation of nbOfUnits attribute.
+
+-- open -q <BASE>.soil
+-- here some mutation code

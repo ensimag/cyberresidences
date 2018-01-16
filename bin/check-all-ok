@@ -1,0 +1,7 @@
+# This script checks all invariants with the OK/1 state
+# The output muust display OK for all invariants
+#
+# example:
+#    bin/check-all-ok
+#
+use -qv Classes/classes.cls States/OK/1/state.sts

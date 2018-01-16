@@ -1,0 +1,7 @@
+-- @assert Tenant__tenantInRentedRoom KO
+
+-- context self : Tenant inv tenantInRentedRoom :
+-- Room occupied by the tenant.
+
+-- open -q <BASE>.soil
+-- here some mutation code

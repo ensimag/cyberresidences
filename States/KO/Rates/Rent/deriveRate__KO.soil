@@ -1,0 +1,7 @@
+-- @assert Rent__deriveRate KO
+
+-- context self : Rent inv deriveRate :
+-- Derivation of the attribute rate.
+
+-- open -q <BASE>.soil
+-- here some mutation code

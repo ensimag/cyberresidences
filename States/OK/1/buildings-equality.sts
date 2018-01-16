@@ -1,0 +1,77 @@
+-- Contributed by lbarallon 2017
+
+--------------------------------------------------------
+--           IsOccupiedBy
+--------------------------------------------------------
+
+! resEquality := new Residence('equality')
+! resEquality.floorMin := 1
+! resEquality.floorMax := 2
+! resEquality.category := #standard
+! resEquality.maxNbOfFreeUnits := 5
+! resEquality.name := 'ResidenceStandard'
+! resEquality.avgRate := 80
+
+--------------------------------------------------------
+--           Bedroom
+--------------------------------------------------------
+
+! equBedroom100 := new Bedroom('bedEqu100')
+! equBedroom100.number := 100
+! equBedroom100.floor := 1
+! equBedroom100.isOutOfOrder := false
+! equBedroom100.nbOfSingleBeds := 1
+! equBedroom100.nbOfDoubleBeds := 0
+! equBedroom100.rate := 50
+! equBedroom100.nbOfUnits := 1
+
+! equBedroom101 := new Bedroom('bedEqu101')
+! equBedroom101.number := 101
+! equBedroom101.floor := 1
+! equBedroom101.isOutOfOrder := false
+! equBedroom101.nbOfSingleBeds := 2
+! equBedroom101.nbOfDoubleBeds := 1
+! equBedroom101.rate := 150
+! equBedroom101.nbOfUnits := 4
+
+--------------------------------------------------------
+--           Bathroom
+--------------------------------------------------------
+
+! equBathroom100 := new Bathroom('bathEqu100')
+! equBathroom100.number := 100
+! equBathroom100.floor := 1
+! equBathroom100.isOutOfOrder := false
+! equBathroom100.isOnTheLanding := false
+
+! equBathroom101a := new Bathroom('bathEqu101a')
+! equBathroom101a.number := 101
+! equBathroom101a.floor := 1
+! equBathroom101a.isOutOfOrder := true
+! equBathroom101a.isOnTheLanding := true
+
+! equBathroom101b := new Bathroom('bathEqu101b')
+! equBathroom101b.number := 102
+! equBathroom101b.floor := 1
+! equBathroom101b.isOutOfOrder := false
+! equBathroom101b.isOnTheLanding := true
+
+--------------------------------------------------------
+--           ContainsRooms
+--------------------------------------------------------
+
+! insert (resEquality, equBedroom100) into ContainsRooms
+! insert (resEquality, equBathroom100) into ContainsRooms
+! insert (resEquality, equBedroom101) into ContainsRooms
+! insert (resEquality, equBathroom101a) into ContainsRooms
+! insert (resEquality, equBathroom101b) into ContainsRooms
+
+
+--------------------------------------------------------
+--           IsInBedroom
+--------------------------------------------------------
+
+! insert (equBathroom100, equBedroom100) into IsInBedroom
+--! insert (equBathroom101a, equBedroom101) into IsInBedroom
+--! insert (equBathroom101b, equBedroom101) into IsInBedroom
+
